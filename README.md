@@ -27,6 +27,7 @@ The paths for images from Google Image Search are contained in `data/google-imag
    ./scripts/download_data.sh data/google-images
 ```
 All downloaded images are sub-directories, such as
+```
 ── weat8
 │   ├── attr_man
 │   │   ├── aunt_0.jpg
@@ -41,7 +42,7 @@ All downloaded images are sub-directories, such as
 |	|	...
 |	|	└── technology_9.jpg
 |	└── get.sh
-
+```
 ## Download pretrained models
 Download the pretrained models for:
 * [ViLBERT](https://drive.google.com/drive/folders/1Re0L75uazH3Qrep_aRgtaVelDEz4HV9c)
