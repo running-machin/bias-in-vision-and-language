@@ -11,7 +11,7 @@ Create the conda environment.
 	python -m spacy download en
 
 	# download specific model repos
-	git clone git@github.com:uclanlp/visualbert.git
+	git clone https://github.com/uclanlp/visualbert.git
 ```
 
 ## Usage
@@ -61,12 +61,12 @@ For the models below, pretrained on either COCO or Conceptual Captions, some of 
 ### VisualBERT
 VisualBERT uses [Detectron](https://github.com/facebookresearch/Detectron) to get features from faster-rcnn.
 ```bash
-   git clone git@github.com:facebookresearch/Detectron.git
+   git clone https://github.com/facebookresearch/Detectron.git
    mkdir Detectron/pretrained-models
    mv Detectron visualbert/utils
 
    # download pretrained model
-   wget -o visualbert/utils/Detectron/pretrained-models/detectron_35861858.pkl https://dl.fbaipublicfiles.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train%3Acoco_2014_valminusminival/generalized_rcnn/model_final.pkl
+   wget -O visualbert/utils/detectron/pretrained-models/detectron_35861858.pkl https://dl.fbaipublicfiles.com/detectron/35861858/12_2017_baselines/e2e_mask_rcnn_R-101-FPN_2x.yaml.02_32_51.SgT4y1cO/output/train/coco_2014_train%3Acoco_2014_valminusminival/generalized_rcnn/model_final.pkl
 
    # run feature extract example
    python visualbert/utils/get_image_features/extract_image_features_nlvr.py \
